@@ -548,10 +548,115 @@ footer {
 /* — Animations — */
 @keyframes fadeSlide { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
 
-@media(max-width:600px) {
-  .hero-meta { grid-template-columns: repeat(2,1fr); }
-  .hero-stat { padding: 1.2rem 1.4rem; }
+<!-- ═══════════════════════════════════════ -->
+/* — Animations — */
+@keyframes fadeSlide { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+
+/* ═══════════════════════════════════════
+   TABLET BREAKPOINT (768px and below)
+═══════════════════════════════════════ */
+@media(max-width:768px) {
+  body {
+    padding: 0 1rem;
+  }
+  
+  .hero-content {
+    padding: 4rem 1.5rem 2rem;
+  }
+  
+  .section {
+    padding: 3rem 1.5rem 2rem;
+  }
+  
+  .nav-btn {
+    padding: 0.9rem 1rem;
+  }
+  
+  .card {
+    padding: 1.4rem;
+  }
+  
+  .pillar {
+    padding: 1.2rem;
+  }
 }
+
+/* ═══════════════════════════════════════
+   MOBILE BREAKPOINT (600px and below)
+═══════════════════════════════════════ */
+@media(max-width:600px) {
+  body {
+    padding: 0 0.75rem;
+  }
+  
+  .hero-meta { 
+    grid-template-columns: repeat(2,1fr); 
+  }
+  
+  .hero-stat { 
+    padding: 1.2rem 1.4rem; 
+  }
+  
+  .hero-content {
+    padding: 3rem 1rem 2rem;
+  }
+  
+  .section {
+    padding: 2rem 0.75rem 1.5rem;
+  }
+  
+  .card {
+    padding: 1.2rem;
+  }
+  
+  .pillar {
+    padding: 1rem;
+  }
+  
+  .alert {
+    padding: 1.2rem 1.4rem;
+  }
+  
+  .tl-item {
+    grid-template-columns: 75px 1fr;
+  }
+}
+
+/* ═══════════════════════════════════════
+   EXTRA SMALL DEVICES (below 400px)
+═══════════════════════════════════════ */
+@media(max-width:400px) {
+  body {
+    padding: 0 0.5rem;
+  }
+  
+  .hero-content {
+    padding: 2.5rem 0.75rem 1.5rem;
+  }
+  
+  .section {
+    padding: 1.5rem 0.5rem 1rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 6vw, 4rem);
+  }
+  
+  .s-title {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+  }
+  
+  .card {
+    padding: 1rem;
+  }
+  
+  .nav-btn {
+    padding: 0.8rem 0.8rem;
+    font-size: 0.55rem;
+  }
+}
+
+</style>
 </style>
 </head>
 <body>
