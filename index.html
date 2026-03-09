@@ -29,6 +29,15 @@ body {
   color: var(--cream);
   font-family: 'Lora', serif;
   overflow-x: hidden;
+  padding: 0 0.5rem;
+}
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: 'Lora', serif;
+  overflow-x: hidden;
 }
 
 /* ═══════════════════════════════════════
@@ -545,11 +554,9 @@ footer {
   text-transform: uppercase; color: rgba(249,243,232,0.15);
 }
 
-/* — Animations — */
-@keyframes fadeSlide { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
-
 <!-- ═══════════════════════════════════════ -->
 /* — Animations — */
+@keyframes fadeSlide { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
 @keyframes fadeSlide { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
 
 /* ═══════════════════════════════════════
@@ -557,15 +564,15 @@ footer {
 ═══════════════════════════════════════ */
 @media(max-width:768px) {
   body {
-    padding: 0 1rem;
+    padding: 0 1rem !important;
   }
   
   .hero-content {
-    padding: 4rem 1.5rem 2rem;
+    padding: 4rem 1.5rem 2rem !important;
   }
   
   .section {
-    padding: 3rem 1.5rem 2rem;
+    padding: 3rem 1.5rem 2rem !important;
   }
   
   .nav-btn {
@@ -579,14 +586,18 @@ footer {
   .pillar {
     padding: 1.2rem;
   }
+  
+  .alert {
+    padding: 1.2rem 1.4rem;
+  }
 }
 
-/* ═══════════════════════════════════════
+/* ════════════════════════════���══════════
    MOBILE BREAKPOINT (600px and below)
 ═══════════════════════════════════════ */
 @media(max-width:600px) {
   body {
-    padding: 0 0.75rem;
+    padding: 0 0.75rem !important;
   }
   
   .hero-meta { 
@@ -598,11 +609,11 @@ footer {
   }
   
   .hero-content {
-    padding: 3rem 1rem 2rem;
+    padding: 3rem 1rem 2rem !important;
   }
   
   .section {
-    padding: 2rem 0.75rem 1.5rem;
+    padding: 2rem 0.75rem 1.5rem !important;
   }
   
   .card {
@@ -627,15 +638,15 @@ footer {
 ═══════════════════════════════════════ */
 @media(max-width:400px) {
   body {
-    padding: 0 0.5rem;
+    padding: 0 0.5rem !important;
   }
   
   .hero-content {
-    padding: 2.5rem 0.75rem 1.5rem;
+    padding: 2.5rem 0.75rem 1.5rem !important;
   }
   
   .section {
-    padding: 1.5rem 0.5rem 1rem;
+    padding: 1.5rem 0.5rem 1rem !important;
   }
   
   .hero-title {
@@ -655,7 +666,7 @@ footer {
     font-size: 0.55rem;
   }
 }
-
+  
 </style>
 </style>
 </head>
