@@ -115,7 +115,7 @@ body {
   font-style: italic;
   font-size: clamp(1rem, 2.2vw, 1.25rem);
   color: rgba(249,243,232,0.5);
-  max-width: 560px; line-height: 1.8;
+  max-width: 100%; line-height: 1.8;
   animation: fadeSlide 0.7s ease 0.3s both;
 }
 
@@ -176,6 +176,22 @@ body {
 .nav-btn:hover { color: var(--gold); }
 .nav-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
 
+  /* Nav color variants */
+.nav-btn.c-fire  { color: rgba(232,64,28,0.5); }
+.nav-btn.c-gold  { color: rgba(242,169,59,0.5); }
+.nav-btn.c-jungle{ color: rgba(30,107,69,0.6); }
+.nav-btn.c-ocean { color: rgba(26,74,114,0.7); }
+ 
+.nav-btn.c-fire:hover  { color: var(--fire); }
+.nav-btn.c-gold:hover  { color: var(--gold); }
+.nav-btn.c-jungle:hover{ color: #4db87a; }
+.nav-btn.c-ocean:hover { color: #6ba8d8; }
+ 
+.nav-btn.c-fire.active  { color: var(--fire);  border-bottom-color: var(--fire); }
+.nav-btn.c-gold.active  { color: var(--gold);  border-bottom-color: var(--gold); }
+.nav-btn.c-jungle.active{ color: #4db87a;      border-bottom-color: #4db87a; }
+.nav-btn.c-ocean.active { color: #6ba8d8;      border-bottom-color: #6ba8d8; }
+  
 /* ═══════════════════════════════════════
    SECTIONS
 ═══════════════════════════════════════ */
